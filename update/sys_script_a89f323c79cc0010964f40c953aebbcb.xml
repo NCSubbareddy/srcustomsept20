@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>br01</name>
+        <name>br02</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,30 +30,30 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-var gr = new GlideRecord('incident');
+	
+	var gr = new GlideRecord('incident');
 	if(gr.next()) {
-		gr.update();
+		gr.update();	
 	}
-	gs.addErrorMessage("error is added..");
-	gs.addInfoMessage("info is added..");
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-09-20 07:05:02</sys_created_on>
+        <sys_created_on>2019-09-20 08:52:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>21372e3c798c0010964f40c953aebb0c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>br01</sys_name>
+        <sys_id>a89f323c79cc0010964f40c953aebbcb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>br02</sys_name>
         <sys_overrides/>
         <sys_package display_value="srcustomappSept2001" source="x_srcustomappsept2">bb766ef8798c0010964f40c953aebbee</sys_package>
         <sys_policy/>
         <sys_scope display_value="srcustomappSept2001">bb766ef8798c0010964f40c953aebbee</sys_scope>
-        <sys_update_name>sys_script_21372e3c798c0010964f40c953aebb0c</sys_update_name>
+        <sys_update_name>sys_script_a89f323c79cc0010964f40c953aebbcb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-20 08:45:18</sys_updated_on>
+        <sys_updated_on>2019-09-20 08:52:42</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=21372e3c798c0010964f40c953aebb0c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a89f323c79cc0010964f40c953aebbcb"/>
 </record_update>
